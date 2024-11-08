@@ -1,30 +1,22 @@
-//hero.tsx
-import Image from "next/image"
-import "../style/hero.css";
+import Image from "next/image";
 
 function Hero() {
     return (
-        <div className="container">
-            <div className="container-boxes">
-                {/*left*/}
-                <div className="hero-left-img">
-                    <Image src={"/images/me.jpg"}
-                        width={200}
-                        height={200}
-                        alt="profile" />
-                </div>
-                {/*right*/}
-                <div className="hero-right" >
-                    <h1 className="title">
-                        I'm Zennerha Rauf 
-                        Front-end Developer
-                    </h1>
-                    <p className="description">
-                    As an enthusiastic and committed aspiring Front-end Developer. I am driven by a passion for coding and innovation. I am eager to hone my technical skills, embrace challenges, and contribute to dynamic web development projects. With a strong foundation and a desire to learn continuously, I am set on a path to create meaningful and efficient digital solutions</p>
-                    <button className="btn">HIRE ME</button>
-                </div>
+        <section className="flex flex-col md:flex-row items-center p-10 pt-24 bg-gray-100"> 
+            {/* Left - Image */}
+            <div className="md:w-1/2 flex justify-center mb-4 md:mb-0">
+                <Image src="/images/me.jpg" width={200} height={200} alt="profile" className="rounded-full mb-2" />
             </div>
-        </div>
-    )
+
+            {/* Right - Text with Animation */}
+            <div className="md:w-1/2 text-center md:text-left">
+                <h1 className="text-4xl font-bold mb-4 animate-fade-in-down">I'm Zennerha Rauf, Front-end Developer</h1>
+                <p className="text-gray-700 mb-6">
+                    As an enthusiastic and committed aspiring Front-end Developer, I am driven by a passion for coding and innovation...
+                </p>
+                <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">HIRE ME</button>
+            </div>
+        </section>
+    );
 }
-export default Hero
+export default Hero;
