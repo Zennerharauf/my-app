@@ -10,7 +10,7 @@ function Hero() {
 
             {/* Right - Text with Animation */}
             <div className="md:w-1/2 text-center md:text-left">
-                <h1 className="text-4xl font-bold mb-4 animate-fade-in-down">I'm Zennerha Rauf, Front-end Developer</h1>
+                <h1 className="text-4xl font-bold mb-4 animate-fade-in-down">Im Zennerha Rauf, Front-end Developer</h1>
                 <p className="text-gray-700 mb-6">
                     As an enthusiastic and committed aspiring Front-end Developer, I am driven by a passion for coding and innovation...
                 </p>
